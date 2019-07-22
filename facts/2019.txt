@@ -1,0 +1,1 @@
+2019-07-23: When writing uninitialized data to a MaybeUninit types, you can't use reference or assignment until after a valid pattern has been written. Instead use MaybeUninit::write on nightly, or ptr::write on stable.
